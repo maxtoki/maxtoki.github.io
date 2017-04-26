@@ -242,6 +242,10 @@ pre {
 	white-space: -webkit-pre-wrap;
 }
 
+code {
+	font-family: "Consolas", Courier, Courier New, monospace;
+}
+
 kbd {
 	padding: 0 6px;
 	padding: 0 0.375rem;

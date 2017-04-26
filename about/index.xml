@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on A Hugo website</title>
+    <link>/about/</link>
+    <description>Recent content in Abouts on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Apr 2017 12:22:01 -0400</lastBuildDate>
+    
+	<atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/about/index/</link>
+      <pubDate>Mon, 24 Apr 2017 12:22:01 -0400</pubDate>
+      
+      <guid>/about/index/</guid>
+      <description>Qui ci metto la mia roba di R.
+In Italiano.
+sessionInfo()## R version 3.3.3 (2017-03-06)## Platform: x86_64-w64-mingw32/x64 (64-bit)## Running under: Windows 8.1 x64 (build 9600)## ## locale:## [1] LC_COLLATE=English_United States.1252 ## [2] LC_CTYPE=English_United States.1252 ## [3] LC_MONETARY=English_United States.1252## [4] LC_NUMERIC=C ## [5] LC_TIME=English_United States.1252 ## ## attached base packages:## [1] stats graphics grDevices utils datasets base ## ## loaded via a namespace (and not attached):## [1] backports_1.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/about/</link>
+      <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/about/about/</guid>
+      <description>Qui ci metto la mia roba di R.
+In Italiano.
+sessionInfo()## R version 3.3.3 (2017-03-06)## Platform: x86_64-w64-mingw32/x64 (64-bit)## Running under: Windows 8.1 x64 (build 9600)## ## locale:## [1] LC_COLLATE=English_United States.1252 ## [2] LC_CTYPE=English_United States.1252 ## [3] LC_MONETARY=English_United States.1252## [4] LC_NUMERIC=C ## [5] LC_TIME=English_United States.1252 ## ## attached base packages:## [1] stats graphics grDevices utils datasets base ## ## loaded via a namespace (and not attached):## [1] backports_1.</description>
+    </item>
+    
+  </channel>
+</rss>

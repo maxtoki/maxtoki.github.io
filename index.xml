@@ -17,7 +17,8 @@
       <pubDate>Tue, 25 Apr 2017 21:48:51 -0700</pubDate>
       
       <guid>/about/</guid>
-      <description>Contenuto Appunti di R.</description>
+      <description>Motivazione La motivazione principale è di cercare di mettere un po&amp;rsquo; d&amp;rsquo;ordine nel mio R-casino. Nonostante cerchi di tenere dei bookmarks ordinati, finisco per avere risorse importanti tra i meandri di &amp;ldquo;preferiti&amp;rdquo; Twitter o in fogli note elettronici sparsi. Per non parlare delle &amp;ldquo;scoperte&amp;rdquo; effettuate durante un lavoro e che rimangono sepolte in uno script, o preziose soluzioni rinvenute su StackOverflow e dimenticate.
+Perché in Italiano?  Perché le RisoRse in Inglese sono infinite, e questa non apporterebbe valore aggiunto a quell&amp;rsquo;universo.</description>
     </item>
     
     <item>
@@ -26,7 +27,7 @@
       <pubDate>Tue, 25 Apr 2017 21:48:51 -0700</pubDate>
       
       <guid>/links/</guid>
-      <description> Raccolte  R-Bloggers R-Weekly  </description>
+      <description>Software  CRAN: Sito ufficiale R. R-Studio: Il più popolare IDE per R. tidyverse: I pacchetti del tidyverse.  Riferimenti  R-seek: Motore di ricerca R. RDocumentation: Per trovare l&amp;rsquo;help di ogni funzione, anche quando non si conosce/ricorda il pacchetto che la contiene. StackOverflow/R: Il luogo in cui ci si aiuta&amp;hellip; purché la richiesta di aiuto sia ben formulata.  Notizie  R-Bloggers: aggregatore di blog su R. R-Weekly: notizie settimanali dal mondo R.</description>
     </item>
     
     <item>

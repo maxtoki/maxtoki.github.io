@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Blocco NoteR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Wed, 26 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Addins</title>
+      <link>/categories/addins/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/addins/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Annunci</title>
@@ -17,6 +26,15 @@
       <pubDate>Wed, 26 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/annunci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formattazione Dati</title>
+      <link>/categories/formattazione-dati/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/formattazione-dati/</guid>
       <description></description>
     </item>
     

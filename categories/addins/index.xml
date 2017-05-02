@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Blocco NoteR</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Blocco NoteR</description>
+    <title>Addins on Blocco NoteR</title>
+    <link>/categories/addins/</link>
+    <description>Recent content in Addins on Blocco NoteR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/addins/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,18 +20,6 @@
       <description>Perdonando all’autore Miles McBain i riferimenti al nostro cibo, il pacchetto datapasta da lui creato, può tornare utile in varie situazioni, di solito quando si ha fretta.
 Che cosa fa: permette di copiare al volo dati da varie fonti (es. Excel, i risultati di una query in SQL Server, …) ed incollarli sul pannello script di R-Studio. La magia di datapasta sta nel come vengono incollati.
 Una volta installato il pacchetto…</description>
-    </item>
-    
-    <item>
-      <title>Ciao Mondo</title>
-      <link>/2017/04/26/ciao-mondo/</link>
-      <pubDate>Wed, 26 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/04/26/ciao-mondo/</guid>
-      <description>Dichiaro aperto questo spazio, puramente personale, in cui troveranno casa le peRle in cui mi imbatterò durante il mio lavoro quotidiano con R.
-Il sito stesso è creato via R, grazie ai pacchetti rmarkdown e blogdown, e al tutorial Making a Website Using Blogdown, Hugo, and GitHub pages.
-Nota a se stesso: ricordarsi sempre di includere il comando sessionInfo al termine di ogni post (possibilmente imparare come renderlo automatico).
-Nota a se stesso 2: il tema utilizzato al momento (Mainroad) non sembra “code-friendly”: cercare un altro tema o modificare questo.</description>
     </item>
     
   </channel>

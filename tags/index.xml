@@ -6,9 +6,28 @@
     <description>Recent content in Tags on Blocco NoteR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Datapasta</title>
+      <link>/tags/datapasta/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/datapasta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stackoverflow</title>
+      <link>/tags/stackoverflow/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stackoverflow/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

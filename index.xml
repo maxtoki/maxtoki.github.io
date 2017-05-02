@@ -6,10 +6,21 @@
     <description>Recent content on Blocco NoteR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Thu, 27 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>datapasta (incollare al volo)</title>
+      <link>/2017/05/01/datapasta-incollare-al-volo/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/01/datapasta-incollare-al-volo/</guid>
+      <description>Perdonando all’autore Miles McBain i riferimenti al nostro cibo, il pacchetto datapasta da lui creato, può tornare utile in varie situazioni, di solito quando si ha fretta.
+Che cosa fa: permette di copiare al volo dati da varie fonti (es. Excel, i risultati di una query in SQL Server, …) ed incollarli sul pannello script di R-Studio. La magia di datapasta sta nel come vengono incollati.
+Una volta installato il pacchetto…</description>
+    </item>
     
     <item>
       <title>Cosa bolle in pentola</title>
@@ -18,7 +29,7 @@
       
       <guid>/boilerplate/</guid>
       <description>Contenitore temporaneo disordinato di link e frammenti di codice che serviranno per post futuri.
-Formattazione tabellekableExtraformattablehuxtable</description>
+Formattazione tabellekableExtraformattablehuxtablepivottableMappe, isocronermapzen</description>
     </item>
     
     <item>

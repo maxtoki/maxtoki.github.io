@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/2017/05/01/datapasta-incollare-al-volo/</loc>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/boilerplate/</loc>
     <lastmod>2017-04-27T00:00:00+00:00</lastmod>
   </url>
@@ -22,6 +27,12 @@
   </url>
   
   <url>
+    <loc>/categories/addins/</loc>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/annunci/</loc>
     <lastmod>2017-04-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -29,24 +40,43 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2017-04-26T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/datapasta/</loc>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/formattazione-dati/</loc>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-04-26T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/stackoverflow/</loc>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

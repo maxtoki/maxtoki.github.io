@@ -21,11 +21,20 @@
     </item>
     
     <item>
-      <title>Google Maps Rgdal Ggmap</title>
-      <link>/tags/google-maps-rgdal-ggmap/</link>
+      <title>Google Maps</title>
+      <link>/tags/google-maps/</link>
       <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/google-maps-rgdal-ggmap/</guid>
+      <guid>/tags/google-maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rgdal Ggmap</title>
+      <link>/tags/rgdal-ggmap/</link>
+      <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rgdal-ggmap/</guid>
       <description></description>
     </item>
     

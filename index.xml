@@ -6,10 +6,20 @@
     <description>Recent content on Blocco NoteR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Coordinate da una Google Map</title>
+      <link>/2017/05/04/coordinate-da-una-google-map/</link>
+      <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/04/coordinate-da-una-google-map/</guid>
+      <description>Avete creato una mappa su Google Maps aggiungendo vari segnaposti e volete lavorarci con R? Ecco come avere le coordinate a portata di R.
+Come mappa di esempio, utilizziamo A year of reading the world: nel 2015 Ann Morgan si è cimentata nella lettura di 196 libri, pubblicati in altrettante nazioni (per i curiosi, suggerisco questo articolo, tramite cui ho scoperto il progetto; Ann ha poi anche scritto un libro sull’esperienza).</description>
+    </item>
     
     <item>
       <title>datapasta (incollare al volo)</title>
@@ -29,7 +39,7 @@ Una volta installato il pacchetto…</description>
       
       <guid>/boilerplate/</guid>
       <description>Contenitore temporaneo disordinato di link e frammenti di codice che serviranno per post futuri.
-Formattazione tabellekableExtraformattablehuxtablepivottableMappe, isocronermapzen</description>
+Formattazione tabellekableExtraformattablehuxtablepivottableMappe, isocronermapzenrimuovere testo dalle google maps</description>
     </item>
     
     <item>

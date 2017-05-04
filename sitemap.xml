@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/2017/05/04/coordinate-da-una-google-map/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/05/01/datapasta-incollare-al-volo/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
   </url>
@@ -40,7 +45,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -63,8 +68,20 @@
   </url>
   
   <url>
+    <loc>/tags/google-maps-rgdal-ggmap/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/mappe/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

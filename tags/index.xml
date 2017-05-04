@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Ggmap</title>
+      <link>/tags/ggmap/</link>
+      <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Google Maps</title>
       <link>/tags/google-maps/</link>
       <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
@@ -30,11 +39,11 @@
     </item>
     
     <item>
-      <title>Rgdal Ggmap</title>
-      <link>/tags/rgdal-ggmap/</link>
+      <title>Rgdal</title>
+      <link>/tags/rgdal/</link>
       <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rgdal-ggmap/</guid>
+      <guid>/tags/rgdal/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rgdal on Blocco NoteR</title>
+    <link>/tags/rgdal/</link>
+    <description>Recent content in Rgdal on Blocco NoteR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Thu, 04 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rgdal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coordinate da una Google Map</title>
+      <link>/2017/05/04/coordinate-da-una-google-map/</link>
+      <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/04/coordinate-da-una-google-map/</guid>
+      <description>Avete creato una mappa su Google Maps aggiungendo vari segnaposti e volete lavorarci con R? Ecco come avere le coordinate a portata di R.
+Come mappa di esempio, utilizziamo A year of reading the world: nel 2015 Ann Morgan si è cimentata nella lettura di 196 libri, pubblicati in altrettante nazioni (per i curiosi, suggerisco questo articolo, tramite cui ho scoperto il progetto; Ann ha poi anche scritto un libro sull’esperienza).</description>
+    </item>
+    
+  </channel>
+</rss>

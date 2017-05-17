@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pacchetti on Blocco NoteR</title>
+    <link>/categories/pacchetti/</link>
+    <description>Recent content in Pacchetti on Blocco NoteR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 17 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/pacchetti/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Statistiche pesate</title>
+      <link>/2017/05/17/statistiche-pesate/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/17/statistiche-pesate/</guid>
+      <description>In R base (in realtà in stats) è disponibile la funzione weighted.mean per il calcolo di medie ponderate. Per ulteriori statistiche ponderate, in genere uso il pacchetto weights (la funzione che ho senz’altro utilizzato maggiormente finora è wtd.cor, per calcolare correlazioni pesate).
+Recentemente ho scoperto, in alternativa, Weighted.Desc.Stat.</description>
+    </item>
+    
+  </channel>
+</rss>

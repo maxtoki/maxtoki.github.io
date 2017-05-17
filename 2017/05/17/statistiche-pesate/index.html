@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coordinate da una Google Map</title>
+<title>Statistiche pesate</title>
 <meta name="description" content=" Link, trucchi e tutorial R in Italiano.">
 <meta name="generator" content="Hugo 0.20.2" />
-<meta property="og:title" content="Coordinate da una Google Map" />
-<meta property="og:description" content="Avete creato una mappa su Google Maps aggiungendo vari segnaposti e volete lavorarci con R? Ecco come avere le coordinate a portata di R.
-Come mappa di esempio, utilizziamo A year of reading the world: nel 2015 Ann Morgan si è cimentata nella lettura di 196 libri, pubblicati in altrettante nazioni (per i curiosi, suggerisco questo articolo, tramite cui ho scoperto il progetto; Ann ha poi anche scritto un libro sull’esperienza)." />
+<meta property="og:title" content="Statistiche pesate" />
+<meta property="og:description" content="In R base (in realtà in stats) è disponibile la funzione weighted.mean per il calcolo di medie ponderate. Per ulteriori statistiche ponderate, in genere uso il pacchetto weights (la funzione che ho senz’altro utilizzato maggiormente finora è wtd.cor, per calcolare correlazioni pesate).
+Recentemente ho scoperto, in alternativa, Weighted.Desc.Stat." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/2017/05/04/coordinate-da-una-google-map/" />
+<meta property="og:url" content="/2017/05/17/statistiche-pesate/" />
 
 
 
-<meta property="article:published_time" content="2017-05-04T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-05-04T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-05-17T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-05-17T00:00:00&#43;00:00"/>
 
 
 
@@ -58,73 +58,31 @@ Come mappa di esempio, utilizziamo A year of reading the world: nel 2015 Ann Mor
 <div class="main-content content" role="main" itemprop="mainContentOfPage">
 	<article class="post">
 		<header class="post__header clearfix">
-			<h1 class="post__title">Coordinate da una Google Map</h1>
+			<h1 class="post__title">Statistiche pesate</h1>
 			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2017-05-04 00:00:00 &#43;0000 UTC">May 04, 2017</time>
+				<time class="post__meta-date" datetime="2017-05-17 00:00:00 &#43;0000 UTC">May 17, 2017</time>
 				<span class="post__meta-categories meta-categories">
 					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-					<a class="meta-categories__link" href="../../../../categories/mappe" rel="category">Mappe</a></span>
+					<a class="meta-categories__link" href="../../../../categories/pacchetti" rel="category">Pacchetti</a></span>
 			</p>
 		</header>
 		<div class="post__content clearfix">
-			<p>Avete creato una mappa su Google Maps aggiungendo vari segnaposti e volete lavorarci con R? Ecco come avere le coordinate a portata di R.</p>
-<p>Come mappa di esempio, utilizziamo <a href="https://www.google.com/maps/d/viewer?mid=1INNc5J5yQ1ITOG3K6yjAXKvEgKA&amp;ll=11.533852279411116%2C34.656370118750004&amp;z=2">A year of reading the world</a>: nel 2015 Ann Morgan si è cimentata nella lettura di 196 libri, pubblicati in altrettante nazioni (per i curiosi, suggerisco <a href="http://ideas.ted.com/your-guide-to-reading-the-world/">questo articolo</a>, tramite cui ho scoperto il progetto; Ann ha poi anche <strong>scritto</strong> un libro sull’esperienza).</p>
-<p>Torniamo a R. Se siete sulla pagina della mappa (primo link del paragrafo precedente), tra le opzioni (cliccando sui tre punti allineati verticalmente) si trova <em>Download KML</em>: cliccate e scaricate nella cartella che preferite.</p>
-<p>Dopodiché è questione di una manciata di righe di codice.</p>
-<pre class="r"><code>library(rgdal)
-filename &lt;- &quot;cartella/ove/hai/salvato/world_books.kml&quot;
+			<!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
 
-(lyr &lt;- ogrListLayers(filename))
-map &lt;- readOGR (filename, layer=lyr, verbose = TRUE, drop_unsupported_fields=T, dropNULLGeometries=T)</code></pre>
-<pre><code>## Loading required package: methods</code></pre>
-<pre><code>## Loading required package: sp</code></pre>
-<pre><code>## rgdal: version: 1.1-7, (SVN revision 612)
-##  Geospatial Data Abstraction Library extensions to R successfully loaded
-##  Loaded GDAL runtime: GDAL 2.0.1, released 2015/09/15
-##  Path to GDAL shared files: C:/Users/mmarchi/Documents/R/win-library/3.3/rgdal/gdal
-##  GDAL does not use iconv for recoding strings.
-##  Loaded PROJ.4 runtime: Rel. 4.9.1, 04 March 2015, [PJ_VERSION: 491]
-##  Path to PROJ.4 shared files: C:/Users/mmarchi/Documents/R/win-library/3.3/rgdal/proj
-##  Linking to sp version: 1.2-2</code></pre>
-<pre><code>## [1] &quot;Untitled layer&quot;
-## attr(,&quot;driver&quot;)
-## [1] &quot;KML&quot;
-## attr(,&quot;nlayers&quot;)
-## [1] 1</code></pre>
-<pre><code>## OGR data source with driver: KML 
-## Source: &quot;C:/Users/mmarchi/Downloads/world_books.kml&quot;, layer: &quot;Untitled layer&quot;
-## with 197 features
-## It has 2 fields</code></pre>
-<p>L’oggetto <code>map</code> contiene tutte le informazioni per ricreare la mappa, incluse le coordinate.</p>
-<pre class="r"><code>head(map@coords)</code></pre>
-<pre><code>##       coords.x1 coords.x2 coords.x3
-## [1,] -100.79019  41.36432         0
-## [2,]  -99.06950  21.66292         0
-## [3,] -113.73047  54.67383         0
-## [4,]  -77.51953  21.20705         0
-## [5,]  -90.39519  14.18172         0
-## [6,]  -77.73926  24.17683         0</code></pre>
-<p>Con il pacchetto <code>ggmap</code> possiamo creare la nostra versione della mappa (di seguito uno zoom sull’Europa).</p>
-<pre class="r"><code>library(ggmap)</code></pre>
-<pre><code>## Loading required package: ggplot2</code></pre>
-<pre class="r"><code>ggmap(get_map(&quot;Europe&quot;, zoom=3), extent = &quot;device&quot;) +
-  geom_point(data=as.data.frame(map@coords), aes(x=coords.x1, y=coords.x2), alpha=.5, col=&quot;red&quot;)</code></pre>
-<pre><code>## Map from URL : http://maps.googleapis.com/maps/api/staticmap?center=Europe&amp;zoom=3&amp;size=640x640&amp;scale=2&amp;maptype=terrain&amp;language=en-EN&amp;sensor=false</code></pre>
-<pre><code>## Information from URL : http://maps.googleapis.com/maps/api/geocode/json?address=Europe&amp;sensor=false</code></pre>
-<pre><code>## Warning: `panel.margin` is deprecated. Please use `panel.spacing` property
-## instead</code></pre>
-<pre><code>## Warning: Removed 104 rows containing missing values (geom_point).</code></pre>
-<p><img src="../../../../post/2017-05-04-coordinate-da-una-google-map_files/figure-html/europe_books-1.png" width="672" /></p>
+<!-- BLOGDOWN-BODY-BEFORE -->
+<!-- /BLOGDOWN-BODY-BEFORE -->
+<p>In R base (in realtà in <code>stats</code>) è disponibile la funzione <code>weighted.mean</code> per il calcolo di medie ponderate. Per ulteriori statistiche ponderate, in genere uso il pacchetto <code>weights</code> (la funzione che ho senz’altro utilizzato maggiormente finora è <code>wtd.cor</code>, per calcolare correlazioni pesate).</p>
+<p>Recentemente ho scoperto, in alternativa, <code>Weighted.Desc.Stat</code>.</p>
 
 		</div>
 		
 <div class="post__tags tags clearfix">
 	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link" href="../../../../tags/google-maps/" rel="tag">google maps</a></li>
-		<li class="tags__item"><a class="tags__link" href="../../../../tags/rgdal/" rel="tag">rgdal</a></li>
-		<li class="tags__item"><a class="tags__link" href="../../../../tags/ggmap/" rel="tag">ggmap</a></li>
+		<li class="tags__item"><a class="tags__link" href="../../../../tags/weights/" rel="tag">weights</a></li>
+		<li class="tags__item"><a class="tags__link" href="../../../../tags/weighted.desc.stat/" rel="tag">Weighted.Desc.Stat</a></li>
 	</ul>
 </div>
 
@@ -133,10 +91,7 @@ map &lt;- readOGR (filename, layer=lyr, verbose = TRUE, drop_unsupported_fields=
 	
 <nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 	<div class="post-nav__item post-nav__item--prev col-1-2">
-		<a class="post-nav__link" href="../../../../2017/05/01/datapasta-incollare-al-volo/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">datapasta (incollare al volo)</p></a>
-	</div>
-	<div class="post-nav__item post-nav__item--next col-1-2">
-		<a class="post-nav__link" href="../../../../2017/05/17/statistiche-pesate/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Statistiche pesate</p></a>
+		<a class="post-nav__link" href="../../../../2017/05/04/coordinate-da-una-google-map/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Coordinate da una Google Map</p></a>
 	</div>
 </nav>
 

@@ -6,10 +6,20 @@
     <description>Recent content on Blocco NoteR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Thu, 04 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Statistiche pesate</title>
+      <link>/2017/05/17/statistiche-pesate/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/17/statistiche-pesate/</guid>
+      <description>In R base (in realtà in stats) è disponibile la funzione weighted.mean per il calcolo di medie ponderate. Per ulteriori statistiche ponderate, in genere uso il pacchetto weights (la funzione che ho senz’altro utilizzato maggiormente finora è wtd.cor, per calcolare correlazioni pesate).
+Recentemente ho scoperto, in alternativa, Weighted.Desc.Stat.</description>
+    </item>
     
     <item>
       <title>Coordinate da una Google Map</title>
@@ -39,7 +49,7 @@ Una volta installato il pacchetto…</description>
       
       <guid>/boilerplate/</guid>
       <description>Contenitore temporaneo disordinato di link e frammenti di codice che serviranno per post futuri.
-Formattazione tabellekableExtraformattablehuxtablepivottableMappe, isocronermapzenrimuovere testo dalle google maps</description>
+Formattazione tabellekableExtraformattablehuxtablepivottabletangramMappe, isocronermapzenrimuovere testo dalle google mapsspatial.lyShinyRInno Shiny App -&amp;gt; eseguibile windows.chiamata asincrona</description>
     </item>
     
     <item>

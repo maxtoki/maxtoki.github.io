@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/2017/05/18/funzioni-di-un-pacchetto/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/05/17/statistiche-pesate/</loc>
     <lastmod>2017-05-17T00:00:00+00:00</lastmod>
   </url>
@@ -50,7 +55,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-05-17T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -92,13 +97,13 @@
   
   <url>
     <loc>/categories/pacchetti/</loc>
-    <lastmod>2017-05-17T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-05-17T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -117,6 +122,12 @@
   <url>
     <loc>/tags/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/trucchi/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

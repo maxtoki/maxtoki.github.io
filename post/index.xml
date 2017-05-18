@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Blocco NoteR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Wed, 17 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Funzioni di un pacchetto</title>
+      <link>/2017/05/18/funzioni-di-un-pacchetto/</link>
+      <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/18/funzioni-di-un-pacchetto/</guid>
+      <description>Come visualizzare tutte le funzioni presenti (esportate) in un pacchetto? Con ls(), a patto che il pacchetto sia stato caricato.
+library(jsonlite)## Loading required package: methodsls(&amp;quot;package:jsonlite&amp;quot;)## [1] &amp;quot;base64_dec&amp;quot; &amp;quot;base64_enc&amp;quot; &amp;quot;flatten&amp;quot; ## [4] &amp;quot;fromJSON&amp;quot; &amp;quot;minify&amp;quot; &amp;quot;prettify&amp;quot; ## [7] &amp;quot;rbind.pages&amp;quot; &amp;quot;read_json&amp;quot; &amp;quot;serializeJSON&amp;quot; ## [10] &amp;quot;stream_in&amp;quot; &amp;quot;stream_out&amp;quot; &amp;quot;toJSON&amp;quot; ## [13] &amp;quot;unbox&amp;quot; &amp;quot;unserializeJSON&amp;quot; &amp;quot;validate&amp;quot; ## [16] &amp;quot;write_json&amp;quot;</description>
+    </item>
     
     <item>
       <title>Statistiche pesate</title>

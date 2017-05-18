@@ -3,20 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>datapasta (incollare al volo)</title>
+<title>Funzioni di un pacchetto</title>
 <meta name="description" content=" Link, trucchi e tutorial R in Italiano.">
 <meta name="generator" content="Hugo 0.20.2" />
-<meta property="og:title" content="datapasta (incollare al volo)" />
-<meta property="og:description" content="Perdonando all’autore Miles McBain i riferimenti al nostro cibo, il pacchetto datapasta da lui creato, può tornare utile in varie situazioni, di solito quando si ha fretta.
-Che cosa fa: permette di copiare al volo dati da varie fonti (es. Excel, i risultati di una query in SQL Server, …) ed incollarli sul pannello script di R-Studio. La magia di datapasta sta nel come vengono incollati.
-Una volta installato il pacchetto…" />
+<meta property="og:title" content="Funzioni di un pacchetto" />
+<meta property="og:description" content="Come visualizzare tutte le funzioni presenti (esportate) in un pacchetto? Con ls(), a patto che il pacchetto sia stato caricato.
+library(jsonlite)## Loading required package: methodsls(&quot;package:jsonlite&quot;)## [1] &quot;base64_dec&quot; &quot;base64_enc&quot; &quot;flatten&quot; ## [4] &quot;fromJSON&quot; &quot;minify&quot; &quot;prettify&quot; ## [7] &quot;rbind.pages&quot; &quot;read_json&quot; &quot;serializeJSON&quot; ## [10] &quot;stream_in&quot; &quot;stream_out&quot; &quot;toJSON&quot; ## [13] &quot;unbox&quot; &quot;unserializeJSON&quot; &quot;validate&quot; ## [16] &quot;write_json&quot;" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/2017/05/01/datapasta-incollare-al-volo/" />
+<meta property="og:url" content="/2017/05/18/funzioni-di-un-pacchetto/" />
 
 
 
-<meta property="article:published_time" content="2017-05-01T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-05-01T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-05-18T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-05-18T00:00:00&#43;00:00"/>
 
 
 
@@ -59,13 +58,13 @@ Una volta installato il pacchetto…" />
 <div class="main-content content" role="main" itemprop="mainContentOfPage">
 	<article class="post">
 		<header class="post__header clearfix">
-			<h1 class="post__title">datapasta (incollare al volo)</h1>
+			<h1 class="post__title">Funzioni di un pacchetto</h1>
 			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2017-05-01 00:00:00 &#43;0000 UTC">May 01, 2017</time>
+				<time class="post__meta-date" datetime="2017-05-18 00:00:00 &#43;0000 UTC">May 18, 2017</time>
 				<span class="post__meta-categories meta-categories">
 					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-					<a class="meta-categories__link" href="../../../../categories/addins" rel="category">Addins</a>, <a class="meta-categories__link" href="../../../../categories/formattazione-dati" rel="category">Formattazione Dati</a></span>
+					<a class="meta-categories__link" href="../../../../categories/trucchi" rel="category">Trucchi</a>, <a class="meta-categories__link" href="../../../../categories/pacchetti" rel="category">Pacchetti</a></span>
 			</p>
 		</header>
 		<div class="post__content clearfix">
@@ -74,38 +73,26 @@ Una volta installato il pacchetto…" />
 
 <!-- BLOGDOWN-BODY-BEFORE -->
 <!-- /BLOGDOWN-BODY-BEFORE -->
-<p>Perdonando all’autore <a href="https://github.com/MilesMcBain">Miles McBain</a> i riferimenti al nostro cibo, il pacchetto <a href="https://cran.r-project.org/web/packages/datapasta/index.html"><code>datapasta</code></a> da lui creato, può tornare utile in varie situazioni, di solito quando si ha fretta.</p>
-<p><em>Che cosa fa</em>: permette di copiare al volo dati da varie fonti (es. Excel, i risultati di una query in SQL Server, …) ed incollarli sul pannello script di R-Studio. La magia di <code>datapasta</code> sta nel <strong>come</strong> vengono incollati.</p>
-<p>Una volta installato il pacchetto…</p>
-<pre class="r"><code>install.packages(&quot;datapasta&quot;)</code></pre>
-<p>… ci si ritrova con vari Addins (R-Studio supporta gli Addins a partire dalla versione 0.99.878) “Paste as…”</p>
-<p>Se si copia, ad esempio, una tabella Excel e si seleziona <code>Paste as data.frame</code>, ci si trova incollato quanto di seguito, ovvero il codice per ricreare la tabella come <code>data.frame</code> R (tra le altre possibilità si può incollare come <code>tribble</code> o come vettore):</p>
-<pre class="r"><code>data.frame(stringsAsFactors=FALSE,
-      Numero = c(1L, 2L, 3L, 4L),
-     Lettera = c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;),
-      Colore = c(&quot;rosso&quot;, &quot;verde&quot;, &quot;giallo&quot;, &quot;blu&quot;)
-)</code></pre>
-<p><em>Quando usarlo</em>: con moderazione, solo quando si è sicuri di non dover ripetere le analisi successive su altri dati. Può rivelarsi particolarmente comodo per preparare l’<em>esempio riproducibile</em> necessario per chiedere aiuto su <a href="http://stackoverflow.com/questions/tagged/r">StackOverflow</a>, ad esempio quando i dati su cui si lavora sono il risultato di una query e non sarebbe particolarmente agevole/opportuno incollare su <a href="http://stackoverflow.com/questions/tagged/r">StackOverflow</a> tutti i passaggi per arrivare al <code>data.frame</code> da analizzare.</p>
+<p>Come visualizzare tutte le funzioni presenti (esportate) in un pacchetto? Con <code>ls()</code>, a patto che il pacchetto sia stato caricato.</p>
+<pre class="r"><code>library(jsonlite)</code></pre>
+<pre><code>## Loading required package: methods</code></pre>
+<pre class="r"><code>ls(&quot;package:jsonlite&quot;)</code></pre>
+<pre><code>##  [1] &quot;base64_dec&quot;      &quot;base64_enc&quot;      &quot;flatten&quot;        
+##  [4] &quot;fromJSON&quot;        &quot;minify&quot;          &quot;prettify&quot;       
+##  [7] &quot;rbind.pages&quot;     &quot;read_json&quot;       &quot;serializeJSON&quot;  
+## [10] &quot;stream_in&quot;       &quot;stream_out&quot;      &quot;toJSON&quot;         
+## [13] &quot;unbox&quot;           &quot;unserializeJSON&quot; &quot;validate&quot;       
+## [16] &quot;write_json&quot;</code></pre>
 
 		</div>
 		
-<div class="post__tags tags clearfix">
-	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
-	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link" href="../../../../tags/datapasta/" rel="tag">datapasta</a></li>
-		<li class="tags__item"><a class="tags__link" href="../../../../tags/stackoverflow/" rel="tag">stackoverflow</a></li>
-	</ul>
-</div>
 
 	</article>
 	
 	
 <nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 	<div class="post-nav__item post-nav__item--prev col-1-2">
-		<a class="post-nav__link" href="../../../../2017/04/26/ciao-mondo/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Ciao Mondo</p></a>
-	</div>
-	<div class="post-nav__item post-nav__item--next col-1-2">
-		<a class="post-nav__link" href="../../../../2017/05/04/coordinate-da-una-google-map/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Coordinate da una Google Map</p></a>
+		<a class="post-nav__link" href="../../../../2017/05/17/statistiche-pesate/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Statistiche pesate</p></a>
 	</div>
 </nav>
 
